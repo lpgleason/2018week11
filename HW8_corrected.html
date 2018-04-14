@@ -215,11 +215,11 @@ knn.20 &lt;- knn(train = people, test = people, cl = people$SleepTrouble, k = 20
 100*sum(people$SleepTrouble == knn.1)/length(knn.1)</code></pre>
 <pre><code>## [1] 100</code></pre>
 <pre class="r"><code>100*sum(people$SleepTrouble == knn.3)/length(knn.3)</code></pre>
-<pre><code>## [1] 92.12733</code></pre>
+<pre><code>## [1] 92.25522</code></pre>
 <pre class="r"><code>100*sum(people$SleepTrouble == knn.5)/length(knn.5)</code></pre>
-<pre><code>## [1] 88.71678</code></pre>
+<pre><code>## [1] 88.61731</code></pre>
 <pre class="r"><code>100*sum(people$SleepTrouble == knn.20)/length(knn.20)</code></pre>
-<pre><code>## [1] 78.61305</code></pre>
+<pre><code>## [1] 78.62726</code></pre>
 </div>
 <div id="problem-4" class="section level4">
 <h4>Problem 4</h4>
@@ -233,18 +233,18 @@ table(knn.1, people$SleepTrouble)</code></pre>
 <pre class="r"><code>table(knn.3, people$SleepTrouble)</code></pre>
 <pre><code>##      
 ## knn.3    1    2
-##     1 5067  382
-##     2  172 1416</code></pre>
+##     1 5067  373
+##     2  172 1425</code></pre>
 <pre class="r"><code>table(knn.5, people$SleepTrouble)</code></pre>
 <pre><code>##      
 ## knn.5    1    2
-##     1 5029  584
-##     2  210 1214</code></pre>
+##     1 5031  593
+##     2  208 1205</code></pre>
 <pre class="r"><code>table(knn.20, people$SleepTrouble)</code></pre>
 <pre><code>##       
 ## knn.20    1    2
-##      1 5097 1363
-##      2  142  435</code></pre>
+##      1 5098 1363
+##      2  141  435</code></pre>
 <p>We see that as k increases, the prediction for sleep trouble worsens.</p>
 </div>
 <div id="link-to-github-repository" class="section level3">
