@@ -54,6 +54,8 @@ What is the marginal distribution of sleep trouble (`SleepTrouble`)?
 tally(~ SleepTrouble, data = people, format = "percent")
 
 ```
+The marginal distribution of sleep trouble in the NHANES dataset is 19.73%.
+
 
 Recall from our prior work, the packages work better if the dataset is a dataframe, and the variables are numeric.
 
@@ -124,4 +126,8 @@ table(knn.20, people$SleepTrouble)
 
 ```
 
+We see that as k increases, the prediction for sleep trouble worsens.
+
+### Link to GitHub repository
+[https://github.com/lpgleason/2018week11.git](https://github.com/lpgleason/2018week11.git)
 
